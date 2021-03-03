@@ -28,9 +28,9 @@
     });*/
 
 //slide up script 
-$('.scroll-up-btn').click(function(){
+/*$('.scroll-up-btn').click(function(){
     $('html').animate({scrollTop: 500})
-});
+});*/
 
     //toggle menu
     $('.menu-btn').click(function(){
@@ -39,7 +39,7 @@ $('.scroll-up-btn').click(function(){
     });
 
     //owl carousel script
-    $('.carousel').owlCarosel({
+    /*$('.carousel').owlCarosel({
         margin: 20,
         loop: true,
         autoplayTimeOut:2000,
@@ -59,31 +59,5 @@ $('.scroll-up-btn').click(function(){
             }
         }
     }); 
-});
+});*/
 
-const form = document.getElementById('form');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const subject = document.getElementById('subject');
-const textarea = document.getElementById('textarea');
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    checkinputs();
-});
-
-//const checkinputs = () => {}
-function checkinputs(){
-    const nameValue = nameValue.value.trim();
-    const emailValue = emailValue.value.trim();
-    const subjectValue = subjectValue.value.trim();
-    const textareaValue = textareaValue.value.trim();
-
-    if (nameValue =='') {
-        setErrorFor(nameValue, "name Cannot be blank")
-    }
-}
-function setErrorFor(input, message){
-    const formControl = input.parentElement;
-}
